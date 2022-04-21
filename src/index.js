@@ -10,8 +10,7 @@ const App = () => {
     <div>
       <label for="name">Enter name:</label>
       <input id="name" />
-      // eslint-disable-next-line react/style-prop-object
-      <button style="background:red;">Submit</button>
+      <button style={{ backgroundColor: 'grey', color: 'white' }}>Submit</button>
     </div>
   );
 };
