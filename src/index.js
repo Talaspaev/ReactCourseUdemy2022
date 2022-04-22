@@ -2,6 +2,7 @@
 
 import React from "react";
 import { createRoot } from "react-dom/client";
+import faker from "faker";
 
 // Create JSX component
 
@@ -10,7 +11,7 @@ const App = () => {
     <div className="ui container comments">
       <div className="comment">
         <a href="#" className="avatar">
-          <img alt="avatar" />
+          <img alt="avatar" src={faker.image.image()} />
         </a>
         <div className="content">
           <a href="#" className="autor">
