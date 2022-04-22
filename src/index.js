@@ -2,55 +2,16 @@
 
 import React from "react";
 import { createRoot } from "react-dom/client";
-import faker from "faker";
+import CommentDetail from "./CommenDetails";
 
 // Create JSX component
 
 const App = () => {
   return (
     <div className="ui container comments">
-      <div className="comment">
-        <a href="#" className="avatar">
-          <img alt="avatar" src={faker.image.image()} />
-        </a>
-        <div className="content">
-          <a href="#" className="autor">
-            Sam
-          </a>
-          <div className="metadata">
-            <span className="date">Today at 2pm</span>
-          </div>
-          <div className="text">Good comment</div>
-        </div>
-      </div>
-      <div className="comment">
-        <a href="#" className="avatar">
-          <img alt="avatar" src={faker.image.image()} />
-        </a>
-        <div className="content">
-          <a href="#" className="autor">
-            Lam
-          </a>
-          <div className="metadata">
-            <span className="date">Today at 2pm</span>
-          </div>
-          <div className="text">Good comment</div>
-        </div>
-      </div>
-      <div className="comment">
-        <a href="#" className="avatar">
-          <img alt="avatar" src={faker.image.image()} />
-        </a>
-        <div className="content">
-          <a href="#" className="autor">
-            Jam
-          </a>
-          <div className="metadata">
-            <span className="date">Today at 2pm</span>
-          </div>
-          <div className="text">Good comment</div>
-        </div>
-      </div>
+      <CommentDetail />
+      <CommentDetail />
+      <CommentDetail />
     </div>
   );
 };
