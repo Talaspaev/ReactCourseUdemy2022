@@ -1,7 +1,7 @@
 // Import the react and reactDOM libraries
 
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 
 // Create JSX component
 
@@ -21,5 +21,6 @@ const App = () => {
 };
 
 //Take react component and show it on the screen
-
-ReactDOM.render(<App />, document.querySelector("#root"));
+const container = document.querySelector("#root");
+const root = createRoot(container);
+root.render(<App />);
