@@ -8,7 +8,7 @@ import { createRoot } from "react-dom/client";
 const App = () => {
   const labelText = () => console.log("Enter name:");
   const buttonStyle = { backgroundColor: "blue", color: "white" };
-  const buttonText = { value: "Sumbit" };
+  const buttonText = { value: "push" };
   return (
     <div>
       <label htmlFor="name" className="label">
