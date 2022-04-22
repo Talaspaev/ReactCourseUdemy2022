@@ -11,7 +11,7 @@ const App = () => {
   const buttonText = { value: "Sumbit" };
   return (
     <div>
-      <label for="name" className="label">
+      <label htmlFor="name" className="label">
         {labelText}
       </label>
       <input id="name" />
