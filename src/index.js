@@ -6,11 +6,16 @@ import ReactDOM from "react-dom";
 // Create JSX component
 
 const App = () => {
+  const labelText = "Enter name:";
+  const buttonStyle = { backgroundColor: "blue", color: "white" };
+  const buttonText = { value: "Sumbit" };
   return (
     <div>
-      <label for="name" className="label">Enter name:</label>
+      <label for="name" className="label">
+        {labelText}
+      </label>
       <input id="name" />
-      <button style={{ backgroundColor: 'grey', color: 'white' }}>Submit</button>
+      <button style={buttonStyle}>{buttonText.value}</button>
     </div>
   );
 };
