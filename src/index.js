@@ -6,16 +6,22 @@ import { createRoot } from "react-dom/client";
 // Create JSX component
 
 const App = () => {
-  const labelText = "Enter name:";
-  const buttonStyle = { backgroundColor: "blue", color: "white" };
-  const buttonText = { value: "Sumbit" };
   return (
-    <div>
-      <label htmlFor="name" className="label">
-        {labelText}
-      </label>
-      <input id="name" />
-      <button style={buttonStyle}>{buttonText.value}</button>
+    <div className="ui container comments">
+      <div className="comment">
+        <a href="#" className="avatar">
+          <img alt="avatar" />
+        </a>
+        <div className="content">
+          <a href="#" className="autor">
+            Sam
+          </a>
+          <div className="metadata">
+            <span className="date">Today at 2pm</span>
+          </div>
+          <div className="text">Good comment</div>
+        </div>
+      </div>
     </div>
   );
 };
