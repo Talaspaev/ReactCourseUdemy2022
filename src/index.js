@@ -13,25 +13,30 @@ import faker from "faker";
 const App = () => {
   return (
     <div className="ui container comments">
-      <ApprovalCard />
-      <CommentDetail
-        author="Sam"
-        timeAgo="Today at 4:45PM"
-        content="Great"
-        avatar={faker.image.image()}
-      />
-      <CommentDetail
-        author="Jane"
-        timeAgo="Today at 2PM"
-        content="Nice"
-        avatar={faker.image.image()}
-      />
-      <CommentDetail
-        author="Kris"
-        timeAgo="Yesterday at 5:30PM"
-        content="Cool"
-        avatar={faker.image.image()}
-      />
+      <ApprovalCard>
+        <CommentDetail
+          author="Sam"
+          timeAgo="Today at 4:45PM"
+          content="Great"
+          avatar={faker.image.image()}
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          author="Jane"
+          timeAgo="Today at 2PM"
+          content="Nice"
+          avatar={faker.image.image()}
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          author="Kris"
+          timeAgo="Yesterday at 5:30PM"
+          content="Cool"
+          avatar={faker.image.image()}
+        />
+      </ApprovalCard>
     </div>
   );
 };
