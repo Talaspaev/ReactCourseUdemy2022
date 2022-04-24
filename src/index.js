@@ -2,7 +2,10 @@
 
 import React from "react";
 import { createRoot } from "react-dom/client";
+
 import CommentDetail from "./CommenDetails";
+import ApprovalCard from "./ApprovalCard";
+
 import faker from "faker";
 
 // Create JSX component
@@ -10,6 +13,7 @@ import faker from "faker";
 const App = () => {
   return (
     <div className="ui container comments">
+      <ApprovalCard />
       <CommentDetail
         author="Sam"
         timeAgo="Today at 4:45PM"
