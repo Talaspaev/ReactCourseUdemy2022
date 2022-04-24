@@ -3,25 +3,44 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
+import CommentDetail from "./CommenDetails";
+import ApprovalCard from "./ApprovalCard";
+
+import faker from "faker";
+
 // Create JSX component
 
 const App = () => {
   return (
     <div className="ui container comments">
-      <div className="comment">
-        <a href="#" className="avatar">
-          <img alt="avatar" />
-        </a>
-        <div className="content">
-          <a href="#" className="autor">
-            Sam
-          </a>
-          <div className="metadata">
-            <span className="date">Today at 2pm</span>
-          </div>
-          <div className="text">Good comment</div>
-        </div>
-      </div>
+      <ApprovalCard>
+        <h4>Warning</h4>
+        <div>Are you sure you want to do this?</div>
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          author="Sam"
+          timeAgo="Today at 4:45PM"
+          content="Great"
+          avatar={faker.image.image()}
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          author="Jane"
+          timeAgo="Today at 2PM"
+          content="Nice"
+          avatar={faker.image.image()}
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          author="Kris"
+          timeAgo="Yesterday at 5:30PM"
+          content="Cool"
+          avatar={faker.image.image()}
+        />
+      </ApprovalCard>
     </div>
   );
 };
